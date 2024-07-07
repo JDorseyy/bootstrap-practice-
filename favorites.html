@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  
+    <body>
+      <main class="container">
+        
+      <nav class="text-center">
+        <a href="index.html">HOME</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="holiday.html">HOLIDAYS</a>
+        <a href="favorites.html">FAVORITES</a>
+      </nav>
+
+      <h1 class="text-center">Favorites</h1>
+      <button 
+    class="btn btn-primary"
+    data-bs-toggle="popover"
+    data-bs-title="yey!"
+    data-bs-content="You've unlocked the secret :)"
+    >
+    Click me!!!
+  </button>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Alphabet</th>
+          <th scope="col">Names</th>
+          <th scope="col">Favorite rank</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">A.</th>
+          <td>GTA V</td>
+          <td>1st</td>
+        </tr>
+        <tr>
+          <th scope="row">B.</th>
+          <td>Call of Duty</td>
+          <td>2nd</td>
+        </tr>
+        <tr>
+          <th scope="row">C.</th>
+          <td>The Division</td>
+          <td>3rd</td>
+        </tr>
+        <tr>
+          <th scope="row">D.</th>
+          <td>Mafia</td>
+          <td>4th</td>
+        </tr>
+        <tr>
+          <th scope="row">E.</th>
+          <td>Mario Bro's</td>
+          <td>5th</td>
+        </tr>
+        <tr>
+          <th scope="row">F.</th>
+          <td>007</td>
+          <td>6th</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <script>
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+  </script>
+      </body>
+      <footer>&copy;Made at CodeX</footer>
+      </main>
+      </html>
